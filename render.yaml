@@ -2,6 +2,7 @@ services:
   - type: web
     name: gameboxservice
     env: static
+    rootDirectory: .
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
     domains:
